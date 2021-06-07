@@ -9,19 +9,19 @@
                     <div class="customer-container">
                         <div class="left-container">
                             <mat-form-field>
-                                <input matInput placeholder="First name" value="{{customer?.firstname}}">
+                                <input disabled matInput placeholder="First name" value="{{customer?.firstname}}">
                             </mat-form-field>
                             <mat-form-field>
-                                <input matInput placeholder="Last name" value="{{customer?.lastname}}">
+                                <input disabled matInput placeholder="Last name" value="{{customer?.lastname}}">
                             </mat-form-field>
                         </div>
                         <div class="right-container">
 
                             <mat-form-field>
-                                <input matInput placeholder="Id card" value="{{customer?.idCard}}">
+                                <input disabled matInput placeholder="Id card" value="{{customer?.idCard}}">
                             </mat-form-field>
                             <mat-form-field>
-                                <input matInput placeholder="Phone number" value="{{customer?.phoneNumber}}">
+                                <input disabled matInput placeholder="Phone number" value="{{customer?.phoneNumber}}">
                             </mat-form-field>
                         </div>
                     </div>
@@ -36,17 +36,17 @@
                     <div class="customer-container">
                         <div class="left-container">
                             <mat-form-field>
-                                <input matInput placeholder="Name" value="{{pet.name}}">
+                                <input disabled matInput placeholder="Name" value="{{pet.name}}">
                             </mat-form-field>
                             <mat-form-field>
-                                <input matInput placeholder="weight" value="{{pet.weight}}">
+                                <input disabled matInput placeholder="weight" value="{{pet.weight}}">
                             </mat-form-field>
 
                         </div>
                         <div class="right-container">
                             <mat-form-field>
                                 <mat-label>Category</mat-label>
-                                <mat-select [(value)]="pet.category">
+                                <mat-select [(value)]="pet.category" disabled>
                                     <mat-option *ngFor="let category  of petCategory" [value]="category">{{
                                         category }}
                                     </mat-option>
@@ -78,13 +78,13 @@
                                 </mat-panel-title>
                             </mat-expansion-panel-header>
                             <mat-form-field>
-                                <input matInput placeholder="Type" value="{{treatment?.type}}">
+                                <input disabled matInput placeholder="Type" value="{{treatment?.type}}">
                             </mat-form-field>
                             <mat-form-field>
-                                <input matInput placeholder="Date" value="{{treatment?.date}}">
+                                <input disabled  matInput placeholder="Date" value="{{treatment?.date}}">
                             </mat-form-field>
                             <mat-form-field>
-                                <input matInput placeholder="Price" value="{{treatment?.price}}">
+                                <input disabled matInput placeholder="Price" value="{{treatment?.price}}">
                             </mat-form-field>
                         </mat-expansion-panel>
                         <br>
