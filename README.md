@@ -1,7 +1,8 @@
 # my-veterinary
 ### My veterinary it's an application for a veterinary pets and appointments management
 ## How to use it ? 
-clone the application source code using git clone https://github.com/mondher95/my-veterinary.git  .
+clone the application source code using git clone https://github.com/mondher95/my-veterinary.git .  
+### npm install 
 ## npm start 
 use this command to start the application and it's fake database server.
 ## what are the different parts ? 
