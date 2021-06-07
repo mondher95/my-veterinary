@@ -5,6 +5,7 @@ import { Pets, Treatment } from 'src/app/Entities/pets';
 import { PetService } from 'src/app/Services/pet.service';
 import { Message } from 'primeng/api';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dialog-overview-example-dialog',
@@ -27,7 +28,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 export class CustomConfirmationDialog {
   constructor(
     public dialogRef: MatDialogRef<CustomConfirmationDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: any, private petService: PetService
+    @Inject(MAT_DIALOG_DATA) public data: any, private petService: PetService, private router: Router
   ) { }
 
   onNoClick(): void {
@@ -54,7 +55,7 @@ export class CustomConfirmationDialog {
       })
     })
     this.dialogRef.close();
-
+    this.router.navigate(['/dashboard']).catch();
   }
 }
 @Component({
@@ -91,7 +92,7 @@ export class AddNewPetComponent implements OnInit {
   // Error, some.expr may be null or undefined
   petForm!: FormGroup;
   petCategory: any[] = ["Dog", "Cat", "Bird", "Snake", "Frog", "Horse"]
-  treatmentType: any[] = ["flea vaccine", "grooming"]
+  treatmentType: any[] = ["flea vaccine", "grooming","diagnostic","biological analyzes",""]
   msgs: Message[] = [];
   displayModal: boolean = false;
 

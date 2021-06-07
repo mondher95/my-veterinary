@@ -95,7 +95,6 @@
       "entryDate": "2021-06-07T12:20:58.353Z",
       "id": 2
     }
-    
   ],
   "owner": [
     {
@@ -106,12 +105,13 @@
       "id": 1
     },
     {
-      "firstname": "balbala",
+      "firstname": "bilel",
       "lastname": "hattab",
       "idCard": "16656",
       "phoneNumber": "29929355",
       "id": 2
     }
+
   ],
   "treatment": [
     {
@@ -176,28 +176,7 @@
         "id": 2
       },
       "id": 3
-    },
-  
-    {
-      "type": "grooming",
-      "date": "2021-06-07T20:41",
-      "price": "55",
-      "pet": {
-        "name": "dsssd",
-        "weight": 5665,
-        "category": "Bird",
-        "customer": {
-          "firstname": "dsdsd",
-          "lastname": "sdsdsd",
-          "idCard": "655656",
-          "phoneNumber": "656556",
-          "id": 3
-        },
-        "treatments": [],
-        "entryDate": "2021-06-07T16:41:42.098Z",
-        "id": 3
-      },
-      "id": 5
     }
+  
   ]
 }
